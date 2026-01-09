@@ -5,15 +5,15 @@
 />
 
 <style>
-  /* Hide "View the Project on GitHub" (jekyll-theme-minimal) */
-  a.view {
+  /* Hide "View the Project on GitHub" (only inside header, safer) */
+  header .view,
+  header a.view {
     display: none !important;
   }
 
-  /* Icon styling */
-  .fa-envelope,
-  .fa-graduation-cap,
-  .fa-github {
+  /* Icon styling (robust) */
+  i.fa-solid,
+  i.fa-brands {
     font-size: 1.4rem;
     margin-right: 0.6rem;
   }
@@ -43,7 +43,7 @@
   /* Top header background + bigger space */
   .wrapper header {
     background-color: #eaf2f8;
-    padding: 4.2rem 2.4rem 3.4rem; /* ← ヘッダーを広く */
+    padding: 4.2rem 2.4rem 3.4rem; /* ヘッダーを広く */
     border-radius: 12px;
   }
 
@@ -59,6 +59,4 @@
     color: #4a4a4a;
   }
 </style>
-
-
 
