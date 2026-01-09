@@ -18,7 +18,27 @@
     margin-right: 0.6rem;
   }
 
-    /* Header background */
+  /* Force the header to stay on top (override minimal theme's left sidebar layout) */
+  header {
+    float: none !important;
+    width: auto !important;
+    position: static !important;
+  }
+
+  section {
+    float: none !important;
+    width: auto !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin-top: 1.5rem;
+  }
+
+  footer {
+    float: none !important;
+    width: auto !important;
+  }
+
+  /* Header background (top header) */
   header.page-header {
     background-color: #eaf2f8; /* 仮色 */
     padding: 2.5rem 1rem;
@@ -32,6 +52,6 @@
   header.page-header p {
     color: #4a4a4a;
   }
-
 </style>
+
 
