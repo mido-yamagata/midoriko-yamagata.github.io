@@ -35,14 +35,14 @@ https://doi.org/10.1080/14779757.2025.2601985
 ## Contact
 
 <a href="mailto:k031316@kansai-u.ac.jp" aria-label="Email">
-  <i class="fa-solid fa-envelope"></i>
+  <i class="fa-solid fa-envelope"></i><span style="margin-left:.35rem;">Email</span>
 </a>
 &nbsp;&nbsp;
 <a href="https://scholar.google.com/citations?user=TCJakYEAAAAJ" aria-label="Google Scholar">
-  <i class="fa-brands fa-google-scholar"></i>
+  <span style="font-weight:600;">Scholar</span>
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/mido-yamagata" aria-label="GitHub">
-  <i class="fa-brands fa-github"></i>
+  <i class="fa-brands fa-github"></i><span style="margin-left:.35rem;">GitHub</span>
 </a>
 
