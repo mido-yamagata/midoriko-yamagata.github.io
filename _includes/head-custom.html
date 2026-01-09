@@ -1,29 +1,55 @@
-<!-- Font Awesome（アイコン用） -->
+<!-- Font Awesome -->
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 />
 
 <style>
-  /* Hide "View the Project on GitHub" */
-  .view { display: none !important; }
+  /* Hide "View the Project on GitHub" (jekyll-theme-minimal) */
+  a.view {
+    display: none !important;
+  }
 
   /* Icon styling */
-  .fa-envelope, .fa-graduation-cap, .fa-github {
+  .fa-envelope,
+  .fa-graduation-cap,
+  .fa-github {
     font-size: 1.4rem;
     margin-right: 0.6rem;
   }
 
-  /* Header: wider padding (more spacious) */
+  /* Force single-column layout (header on top) */
+  .wrapper {
+    width: auto !important;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .wrapper header,
+  .wrapper section,
+  .wrapper footer {
+    float: none !important;
+    width: auto !important;
+    position: static !important;
+  }
+
+  .wrapper section {
+    border-left: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 2.4rem;
+  }
+
+  /* Top header background + bigger space */
   .wrapper header {
     background-color: #eaf2f8;
-    padding: 4rem 2.2rem 3.2rem; /* ← ここが「広くする」設定 */
+    padding: 4.2rem 2.4rem 3.4rem; /* ← ヘッダーを広く */
     border-radius: 12px;
   }
 
-  /* Title/description spacing */
+  /* Title/description spacing inside header */
   .wrapper header h1 {
-    margin: 0 0 0.9rem 0;
+    margin: 0 0 1rem 0;
     line-height: 1.15;
   }
 
@@ -33,5 +59,6 @@
     color: #4a4a4a;
   }
 </style>
+
 
 
