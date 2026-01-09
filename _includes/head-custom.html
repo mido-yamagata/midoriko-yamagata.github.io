@@ -53,5 +53,26 @@
     color: #4a4a4a;
   }
 </style>
+/* Force single-column layout (header on top) for jekyll-theme-minimal */
+.wrapper {
+  width: auto !important;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.wrapper header,
+.wrapper section,
+.wrapper footer {
+  float: none !important;
+  width: auto !important;
+  position: static !important;
+}
+
+.wrapper section {
+  border-left: 0 !important;
+  padding-left: 0 !important;
+  margin-top: 1.5rem;
+}
 
 
