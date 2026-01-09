@@ -18,61 +18,27 @@
     margin-right: 0.6rem;
   }
 
-  /* Force the header to stay on top (override minimal theme's left sidebar layout) */
-  header {
+  /* Force single-column layout (header on top) for jekyll-theme-minimal */
+  .wrapper {
+    width: auto !important;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .wrapper header,
+  .wrapper section,
+  .wrapper footer {
     float: none !important;
     width: auto !important;
     position: static !important;
   }
 
-  section {
-    float: none !important;
-    width: auto !important;
-    border: 0 !important;
-    padding: 0 !important;
-    margin-top: 1.5rem;
-  }
+  .wrapper section {
+    border-left: 0 !important;
+    padding-l
 
-  footer {
-    float: none !important;
-    width: auto !important;
-  }
-
-  /* Header background (top header) */
-  header.page-header {
-    background-color: #eaf2f8; /* 仮色 */
-    padding: 2.5rem 1rem;
-    border-radius: 6px;
-  }
-
-  header.page-header h1 {
-    color: #1f4e79;
-  }
-
-  header.page-header p {
-    color: #4a4a4a;
-  }
-</style>
-/* Force single-column layout (header on top) for jekyll-theme-minimal */
-.wrapper {
-  width: auto !important;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.wrapper header,
-.wrapper section,
-.wrapper footer {
-  float: none !important;
-  width: auto !important;
-  position: static !important;
-}
-
-.wrapper section {
-  border-left: 0 !important;
-  padding-left: 0 !important;
-  margin-top: 1.5rem;
+  margin-top: 2.2rem;
 }
 
 
