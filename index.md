@@ -24,7 +24,7 @@ I am also interested in using AI as a research tool to support clinical psycholo
 Yamagata, M., Yamagishi, D., & Ikemi, A. (2025).  
 Rating the Experiencing Scale with generative AI: Examining the accuracy, reliability, and feasibility of ChatGPT.  
 *Person-Centered & Experiential Psychotherapies*.  
-[https://doi.org/10.1080/14779757.2025.2601985](https://doi.org/10.1080/14779757.2025.2601985)
+[DOI: 10.1080/14779757.2025.2601985](https://doi.org/10.1080/14779757.2025.2601985)
 
 
 ● 論文一覧 / Full list of publications  
