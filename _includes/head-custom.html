@@ -11,21 +11,15 @@
     display: none !important;
   }
 
-  /* Icon styling (robust) */
-  i.fa-solid,
-  i.fa-brands {
-    font-size: 1.4rem;
-    margin-right: 0.6rem;
-  }
-
-  /* Force single-column layout (header on top) */
+  /* Layout: make the site a bit wider */
   .wrapper {
     width: auto !important;
-    max-width: 1000px;
+    max-width: 1100px;   /* ←全体の横幅（好みで 1000-1200） */
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem;   /* ←左右の余白 */
   }
 
+  /* Keep header on top (single column) */
   .wrapper header,
   .wrapper section,
   .wrapper footer {
@@ -40,11 +34,15 @@
     margin-top: 2.4rem;
   }
 
-  /* Top header background + bigger space */
+  /* Header background: wider than content (without 100vw) */
   .wrapper header {
     background-color: #eaf2f8;
-    padding: 4.2rem 2.4rem 3.4rem; /* ヘッダーを広く */
+    padding: 4.2rem 2.4rem 3.4rem;
     border-radius: 12px;
+
+    /* ここがポイント：wrapper の左右 padding(1.5rem) 分だけ広げる */
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 
   /* Title/description spacing inside header */
@@ -58,20 +56,19 @@
     line-height: 1.6;
     color: #4a4a4a;
   }
-  /* Hide the theme's GitHub link block ("View the Project on GitHub") */
-header a[href*="github.com"] {
-  display: none !important;
-}
 
-/* Keep Contact icons in one row */
-#contact-icons a {
-  display: inline-block !important;
-  margin-right: 0.9rem;
-  text-decoration: none;
-}
-#contact-icons i {
-  font-size: 1.6rem;
-  vertical-align: middle;
-}
+  /* Icon styling */
+  #contact-icons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1.2rem;
+    text-decoration: none;
+  }
 
+  #contact-icons i.fa-solid,
+  #contact-icons i.fa-brands {
+    font-size: 1.6rem;
+    vertical-align: middle;
+  }
 </style>
