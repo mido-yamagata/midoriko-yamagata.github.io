@@ -40,12 +40,26 @@
     margin-top: 2.4rem;
   }
 
-  /* Top header background + bigger space */
-  .wrapper header {
-    background-color: #eaf2f8;
-    padding: 4.2rem 2.4rem 3.4rem; /* ヘッダーを広く */
-    border-radius: 12px;
-  }
+/* Full-width header background (like the example site) */
+.wrapper header {
+  position: relative;
+  background: transparent;           /* header本体は透明に */
+  padding: 4.2rem 2.4rem 3.4rem;     /* 高さ（上下の余白） */
+  border-radius: 0;                  /* 横長バーにしたいので基本0 */
+}
+
+/* 背景だけ画面幅いっぱい(100vw)にする */
+.wrapper header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #eaf2f8;         /* ヘッダー背景色 */
+  z-index: -1;                       /* 背景を背面へ */
+}
 
   /* Title/description spacing inside header */
   .wrapper header h1 {
