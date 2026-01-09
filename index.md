@@ -33,5 +33,16 @@ https://doi.org/10.1080/14779757.2025.2601985
 ---
 
 ## Contact
-Email: k031316 [at] kansai-u.ac.jp  
-(※ [at] を @ に置き換えてください)
+
+<a href="mailto:k031316@kansai-u.ac.jp" aria-label="Email">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+&nbsp;&nbsp;
+<a href="https://scholar.google.com/citations?user=TCJakYEAAAAJ" aria-label="Google Scholar">
+  <i class="fa-brands fa-google-scholar"></i>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/mido-yamagata" aria-label="GitHub">
+  <i class="fa-brands fa-github"></i>
+</a>
+
