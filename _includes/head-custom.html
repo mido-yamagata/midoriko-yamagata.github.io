@@ -5,21 +5,27 @@
 />
 
 <style>
-  /* Hide "View the Project on GitHub" (only inside header, safer) */
+  /* Hide "View the Project on GitHub" (only inside header) */
   header .view,
   header a.view {
     display: none !important;
   }
 
-  /* Layout: make the site a bit wider */
-  .wrapper {
-    width: auto !important;
-    max-width: 1100px;   /* ←全体の横幅（好みで 1000-1200） */
-    margin: 0 auto;
-    padding: 0 1.5rem;   /* ←左右の余白 */
+  /* Icon styling (robust) */
+  i.fa-solid,
+  i.fa-brands {
+    font-size: 1.6rem;
+    vertical-align: middle;
   }
 
-  /* Keep header on top (single column) */
+  /* Force single-column layout (header on top) */
+  .wrapper {
+    width: auto !important;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
   .wrapper header,
   .wrapper section,
   .wrapper footer {
@@ -34,15 +40,16 @@
     margin-top: 2.4rem;
   }
 
-  /* Header background: wider than content (without 100vw) */
+  /* ===== Full-width header background (edge-to-edge) ===== */
   .wrapper header {
     background-color: #eaf2f8;
     padding: 4.2rem 2.4rem 3.4rem;
-    border-radius: 12px;
+    border-radius: 0;                 /* 端から端のバー感を優先 */
+    border-bottom: 1px solid rgba(0,0,0,0.06);
 
-    /* ここがポイント：wrapper の左右 padding(1.5rem) 分だけ広げる */
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    /* 背景だけを画面幅いっぱいに広げる（安全版） */
+    box-shadow: 0 0 0 100vmax #eaf2f8;
+    clip-path: inset(0 -100vmax);
   }
 
   /* Title/description spacing inside header */
@@ -57,7 +64,7 @@
     color: #4a4a4a;
   }
 
-  /* Icon styling */
+  /* Contact icons: keep in one row */
   #contact-icons a {
     display: inline-flex;
     align-items: center;
@@ -65,10 +72,5 @@
     margin-right: 1.2rem;
     text-decoration: none;
   }
-
-  #contact-icons i.fa-solid,
-  #contact-icons i.fa-brands {
-    font-size: 1.6rem;
-    vertical-align: middle;
-  }
 </style>
+
