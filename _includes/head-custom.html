@@ -1,4 +1,8 @@
 <style>
-  /* Hide “View the Project on GitHub” */
-  .view { display: none !important; }
+  /* Hide the GitHub project link area in minimal theme */
+  .view,
+  header a[href*="github.com"],
+  header p a[href*="github.com"] {
+    display: none !important;
+  }
 </style>
