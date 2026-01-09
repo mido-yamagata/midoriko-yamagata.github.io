@@ -3,14 +3,14 @@ layout: default
 title: "Midoriko Yamagata"
 ---
 
-# Midoriko Yamagata / 山形 碧子
+# 山形 碧子 / Midoriko Yamagata
 
 Ph.D. Student in Psychology
 Graduate School of Psychology, Kansai University
 
 ---
 
-## Research Interests / 研究の関心
+## 研究の関心 / Research Interests
 My research interests focus on "experiencing" in musical activities and "Focusing."  
 I am also interested in using AI as a research tool to support clinical psychology research.
 
