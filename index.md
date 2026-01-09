@@ -6,7 +6,11 @@ title: "Midoriko Yamagata"
 # 山形 碧子 / Midoriko Yamagata
 
 Ph.D. Student in Psychology
-Graduate School of Psychology, Kansai University
+Graduate School of Psychology, Kansai University  
+
+Qualifications (Japan): Certified Clinical Psychologist / Licensed Psychologist / Coordinator of the Promotion of Health and Employment Support    
+公認心理師／臨床心理士／両立支援コーディネーター
+
 
 ---
 
