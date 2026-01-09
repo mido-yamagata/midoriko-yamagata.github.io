@@ -5,54 +5,63 @@
 />
 
 <style>
-  /* Hide "View the Project on GitHub" (only inside header) */
-  header .view,
-  header a.view {
-    display: none !important;
+  /* 1) 上の白い余白を消す（テーマの余白を強制リセット） */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Icon styling (robust) */
-  i.fa-solid,
-  i.fa-brands {
-    font-size: 1.6rem;
-    vertical-align: middle;
-  }
-
-  /* Force single-column layout (header on top) */
+  /* 2) wrapper を「全幅の箱」にする（ヘッダーを端まで伸ばせるように） */
   .wrapper {
-    width: auto !important;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  .wrapper header,
+  /* 3) 本文（section）だけ中央カラムに戻す */
   .wrapper section,
   .wrapper footer {
     float: none !important;
     width: auto !important;
     position: static !important;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   .wrapper section {
     border-left: 0 !important;
-    padding-left: 0 !important;
+    padding-left: 1.5rem !important; /* 念のため（テーマの上書き対策） */
     margin-top: 2.4rem;
   }
 
-  /* ===== Full-width header background (edge-to-edge) ===== */
+  /* 4) ヘッダーは画面端から端まで */
   .wrapper header {
-    background-color: #eaf2f8;
-    padding: 4.2rem 2.4rem 3.4rem;
-    border-radius: 0;                 /* 端から端のバー感を優先 */
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    float: none !important;
+    width: 100% !important;
+    position: static !important;
 
-    /* 背景だけを画面幅いっぱいに広げる（安全版） */
-    box-shadow: 0 0 0 100vmax #eaf2f8;
-    clip-path: inset(0 -100vmax);
+    background: #eaf2f8;
+    border-radius: 0;
+    margin: 0 !important;
+
+    /* ここがポイント：
+       “本文より左”にしたいなら、本文(1.5rem)より小さい値にする */
+    padding: 4.2rem 1.5rem 3.4rem 0.6rem;
+
+    text-align: left !important;
   }
 
-  /* Title/description spacing inside header */
+  /* ヘッダー内の文字も必ず左寄せ */
+  .wrapper header h1,
+  .wrapper header p {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .wrapper header h1 {
     margin: 0 0 1rem 0;
     line-height: 1.15;
@@ -64,13 +73,24 @@
     color: #4a4a4a;
   }
 
-  /* Contact icons: keep in one row */
+  /* 5) "View the Project on GitHub" を消す（ヘッダー内だけ） */
+  .wrapper header .view,
+  .wrapper header a.view,
+  .wrapper header p.view {
+    display: none !important;
+  }
+
+  /* 6) Contact アイコン */
   #contact-icons a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-right: 1.2rem;
+    display: inline-block !important;
+    margin-right: 0.9rem;
     text-decoration: none;
+  }
+
+  #contact-icons i.fa-solid,
+  #contact-icons i.fa-brands {
+    font-size: 1.6rem;
+    vertical-align: middle;
   }
 </style>
 
