@@ -31,5 +31,47 @@
   .wrapper footer {
     float: none !important;
     width: auto !important;
-    position: static !importa
+    position: static !important;
+  }
 
+  .wrapper section {
+    border-left: 0 !important;
+    padding-left: 0 !important;
+    margin-top: 2.4rem;
+  }
+
+  /* Top header background + bigger space */
+  .wrapper header {
+    background-color: #eaf2f8;
+    padding: 4.2rem 2.4rem 3.4rem; /* ヘッダーを広く */
+    border-radius: 12px;
+  }
+
+  /* Title/description spacing inside header */
+  .wrapper header h1 {
+    margin: 0 0 1rem 0;
+    line-height: 1.15;
+  }
+
+  .wrapper header p {
+    margin: 0;
+    line-height: 1.6;
+    color: #4a4a4a;
+  }
+  /* Hide the theme's GitHub link block ("View the Project on GitHub") */
+header a[href*="github.com"] {
+  display: none !important;
+}
+
+/* Keep Contact icons in one row */
+#contact-icons a {
+  display: inline-block !important;
+  margin-right: 0.9rem;
+  text-decoration: none;
+}
+#contact-icons i {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+</style>
