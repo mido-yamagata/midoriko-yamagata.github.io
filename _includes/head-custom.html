@@ -99,7 +99,39 @@
     font-size: 1.6rem;
     vertical-align: middle;
   }
-  
+
+  /* ===== 本文リンク色を「ヘッダーの緑系」に寄せる ===== */
+  :root {
+    --link: #2e7d5b;       /* 通常リンク（落ち着いた緑） */
+    --link-hover: #1f5d43; /* hover時（少し濃い緑） */
+    --link-visited: #2b6b53; /* 訪問済（濃さ控えめ） */
+  }
+
+  /* 本文のリンク（ヘッダーやContactは除外） */
+  .wrapper section a,
+  .wrapper footer a {
+    color: var(--link) !important;
+    text-decoration: none;
+  }
+
+  .wrapper section a:hover,
+  .wrapper footer a:hover {
+    color: var(--link-hover) !important;
+    text-decoration: underline;
+  }
+
+  .wrapper section a:visited,
+  .wrapper footer a:visited {
+    color: var(--link-visited) !important;
+  }
+
+  /* Contact のアイコンもリンク色に合わせる（必要なら） */
+  #contact-icons a {
+    color: var(--link) !important;
+  }
+  #contact-icons a:hover {
+    color: var(--link-hover) !important;
+  }
 </style>
 
 
