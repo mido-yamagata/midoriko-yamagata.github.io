@@ -5,13 +5,13 @@
 />
 
 <style>
-  /* 1) 上の白い余白を消す（テーマの余白を強制リセット） */
+  /* 1) 上の白い余白を消す */
   html, body {
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  /* 2) wrapper を「全幅の箱」にする（ヘッダーを端まで伸ばせるように） */
+  /* 2) wrapper を全幅にする（ヘッダーを端まで伸ばす） */
   .wrapper {
     width: 100% !important;
     max-width: none !important;
@@ -19,7 +19,7 @@
     padding: 0 !important;
   }
 
-  /* 3) 本文（section）だけ中央カラムに戻す */
+  /* 3) 本文（section/footer）だけ中央カラム */
   .wrapper section,
   .wrapper footer {
     float: none !important;
@@ -33,30 +33,38 @@
 
   .wrapper section {
     border-left: 0 !important;
-    padding-left: 1.5rem !important; /* 念のため（テーマの上書き対策） */
+    padding-left: 0 !important;     /* 二重padding回避 */
     margin-top: 2.4rem;
   }
 
-  /* 4) ヘッダーは画面端から端まで */
+  /* 4) ヘッダーは画面端から端まで + 文字は左寄せ */
   .wrapper header {
     float: none !important;
     width: 100% !important;
-    position: static !important;
-
-    background: #eaf2f8;
-    border-radius: 0;
+    position: relative !important;  /* ::before の基準 */
     margin: 0 !important;
-
-    /* ここがポイント：
-       “本文より左”にしたいなら、本文(1.5rem)より小さい値にする */
-    padding: 4.2rem 1.5rem 3.4rem 0.6rem;
-
+    border-radius: 0;
     text-align: left !important;
+
+    /* “本文より左”に寄せたいなら左paddingを小さく */
+    padding: 4.2rem 1.5rem 3.4rem 0.6rem;
+    background: transparent !important; /* 背景は ::before に任せる */
   }
 
-  /* ヘッダー内の文字も必ず左寄せ */
+  /* ヘッダー背景（全幅） */
+  .wrapper header::before {
+    content:"";
+    position:absolute;
+    inset: 0;                /* top/right/bottom/left = 0 */
+    width: 100%;
+    background:#1f3d4c;       /* 濃い青緑 */
+    z-index:-1;
+  }
+
+  /* ヘッダー内の文字色 */
   .wrapper header h1,
   .wrapper header p {
+    color: #fff !important;
     text-align: left !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -70,7 +78,17 @@
   .wrapper header p {
     margin: 0;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: rgba(255,255,255,0.88) !important;
+  }
+
+  /* ヘッダー内リンク色 */
+  .wrapper header a {
+    color:#d7f0ff !important;
+    text-decoration:none;
+  }
+  .wrapper header a:hover {
+    color:#ffffff !important;
+    text-decoration:underline;
   }
 
   /* 5) "View the Project on GitHub" を消す（ヘッダー内だけ） */
@@ -80,29 +98,17 @@
     display: none !important;
   }
 
-  /* 6) Contact アイコン */
+  /* 6) Contact アイコンを横並び */
   #contact-icons a {
     display: inline-block !important;
     margin-right: 0.9rem;
     text-decoration: none;
   }
-
   #contact-icons i.fa-solid,
   #contact-icons i.fa-brands {
     font-size: 1.6rem;
     vertical-align: middle;
   }
-
-/* ===== Header color theme (Option A: slate-teal) ===== */
-.wrapper header::before { background-color: #2f5d50; } /* dark slate teal */
-
-.wrapper header h1,
-.wrapper header p { color: #ffffff !important; }
-
-.wrapper header a { color: #e1fff3 !important; text-decoration: none; }
-.wrapper header a:hover { color: #ffffff !important; text-decoration: underline; }
-
-/* Optional: make description slightly softer than pure white */
-.wrapper header p { color: rgba(255,255,255,0.88) !important; }  
 </style>
+
 
