@@ -36,6 +36,12 @@ Rating the Experiencing Scale with generative AI: Examining the accuracy, reliab
 
 ---
 
+## 学会関連の音楽のワーク / Conference-related Music Work
+- 国際学会オープニング映像監修・音楽制作（YouTube）
+  - [YouTubeで見る](https://www.youtube.com/watch?v=V7fyf8QS90I)
+
+---
+
 ## Contact
 
 <div id="contact-icons">
