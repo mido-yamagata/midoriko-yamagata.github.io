@@ -57,40 +57,29 @@
     position:absolute;
     inset: 0;                /* top/right/bottom/left = 0 */
     width: 100%;
-    background:#3cb371;       /* 濃い青緑 */
+    background:#2e8b57;       /* 濃い青緑 */
     z-index:-1;
   }
 
-  /* ヘッダー内の文字色 */
-  .wrapper header h1,
-  .wrapper header p {
-  .wrapper header a {
-    color: #ffffff !important;
-    text-align: left !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
+/* ヘッダー内の文字色（白に固定） */
+.wrapper header h1,
+.wrapper header p,
+.wrapper header a {
+  color: #ffffff !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
-  .wrapper header h1 {
-    margin: 0 0 1rem 0;
-    line-height: 1.15;
-  }
+/* 説明文だけ少し柔らかい白 */
+.wrapper header p {
+  color: rgba(255,255,255,0.88) !important;
+}
 
-  .wrapper header p {
-    margin: 0;
-    line-height: 1.6;
-    color: rgba(255,255,255,0.88) !important;
-  }
-
-  /* ヘッダー内リンク色 */
-  .wrapper header a {
-    color:#d7f0ff !important;
-    text-decoration:none;
-  }
-  .wrapper header a:hover {
-    color:#ffffff !important;
-    text-decoration:underline;
-  }
+/* リンクのhover */
+.wrapper header a:hover {
+  text-decoration: underline;
+}
 
   /* 5) "View the Project on GitHub" を消す（ヘッダー内だけ） */
   .wrapper header .view,
