@@ -37,8 +37,8 @@ Rating the Experiencing Scale with generative AI: Examining the accuracy, reliab
 ---
 
 ## 学会関連の音楽ワーク / Conference-related Music Work
-- Asia Focusing International Conference 2017（オープニング映像監修・音楽制作）
-  - [YouTubeで見る](https://www.youtube.com/watch?v=V7fyf8QS90I)
+● Asia Focusing International Conference 2017（オープニング映像監修・音楽制作）  
+[YouTubeで見る](https://www.youtube.com/watch?v=V7fyf8QS90I)
 
 ---
 
