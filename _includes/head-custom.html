@@ -155,6 +155,24 @@
     word-break: keep-all;
   }
 }
+  /* スマホだけ：山形碧子の上に出る薄い線を消す */
+@media (max-width: 600px) {
+  /* ヘッダー下の“線”（box-shadow）を消す */
+  .wrapper header {
+    box-shadow: none !important;
+    border-bottom: 0 !important;
+  }
+
+  /* 本文（section）上の“線”（border-top）を消す */
+  .wrapper section {
+    border-top: 0 !important;
+  }
+
+  /* 念のため：ヘッダー直後の section に限定して消す（保険） */
+  .wrapper header + section {
+    border-top: 0 !important;
+  }
+}
 </style>
 
 
