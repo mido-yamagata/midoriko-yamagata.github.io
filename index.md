@@ -55,6 +55,13 @@ Rating the Experiencing Scale with generative AI: Examining the accuracy, reliab
   <a href="https://github.com/mido-yamagata" aria-label="GitHub">
     <i class="fa-brands fa-github"></i>
   </a>
+
+   <a href="https://www.linkedin.com/in/midoriko-y-1b73383a1/" 
+     aria-label="LinkedIn" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
 </div>
 
 
