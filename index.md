@@ -26,7 +26,7 @@ I am also interested in using AI as a research tool to support clinical psycholo
 
 > 🚩 **現在、研究参加者を募集しています。**  
 > 受動的音楽活動に関する研究です。  
-> 👉 **[募集ページはこちら](/participants/)**
+> 👉 **[募集ページはこちら](/midoriko-yamagata.github.io/participants.html)**
 
 ---
 
