@@ -22,6 +22,14 @@ I am also interested in using AI as a research tool to support clinical psycholo
 
 ---
 
+## 研究参加者募集 / Research Participation
+
+> 🚩 **現在、研究参加者を募集しています。**  
+> 受動的音楽活動に関する研究です。  
+> 👉 **[募集ページはこちら](/participants/)**
+
+---
+
 ## 論文 / Publications
 ● 最新論文  
 Yamagata, M., Yamagishi, D., & Ikemi, A. (2025).  
