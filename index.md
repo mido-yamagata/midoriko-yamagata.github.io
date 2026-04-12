@@ -31,7 +31,12 @@ I am also interested in using AI as a research tool to support clinical psycholo
 ---
 
 ## 論文 / Publications
-● 最新論文  
+● 最近の主な論文  
+ 
+山形 碧子, 田代 千夏, 長澤 麻友, 串崎 真志 (2026)  
+[音楽の語りを用いたカウンセリングやセラピーの効用：質的スコーピングレビュー](https://kansai-u.repo.nii.ac.jp/records/2003783) 
+関西大学心理学研究 17, 1-15. 
+
 Yamagata, M., Yamagishi, D., & Ikemi, A. (2025).  
 Rating the Experiencing Scale with generative AI: Examining the accuracy, reliability, and feasibility of ChatGPT.  
 *Person-Centered & Experiential Psychotherapies*.  
